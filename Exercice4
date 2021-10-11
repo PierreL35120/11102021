@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+    char modele[50];
+    char plaque[50]; //Ici, on réserve de la mémoire pour l'entrée. On prévois large au cas où.
+
+    FILE *file = fopen("voiture.csv", "a");
+    
+    printf("Quel est le modèle de la voiture ? (Ne mettez aucun espace) \n");
+    scanf("%49s", modele);
+    
+    printf("Quel est sa plaque d'immatriculation ? (Ne mettez aucun espace) \n");
+    scanf("%49s", plaque); 
+    
+    fprintf(file, "%s, %s \n", modele, plaque);
+    printf("C'est noté."); //Juste pour faire forme.
+    
+    fclose(file); //C'est pour fermer le fichier csv.
+}
