@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void swap(int *A, int *B);
+
+int main(void)
+{
+
+    int *A;
+    int *B;
+
+    printf("Quelle est le premier chiffre ? \n");
+    scanf("%i", *A);
+
+    printf("Quelle est le second chiffre ? \n");
+    scanf("%i", *B);
+    
+    printf("A %i, B %i.\n", *A, *B);
+    swap(*A, *B);
+    printf("A %i, B %i.\n", *A, *B);
+
+}
+
+void swap(int *A, int *B) 
+{
+    int tmp = *A;
+    *A = *B;
+    *B = tmp;
+}
+
+//J'ai tenté de faire ce code, mais je n'y suis pas arrivé, c'est aussi pourquoi il n'y a pas de version Python, car la version C n'existe pas. Mais je met quand même le code raté.
