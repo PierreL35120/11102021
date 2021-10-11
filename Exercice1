@@ -1,0 +1,34 @@
+Le code C :
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+
+    float A;
+    float B;
+
+    printf("Quelle est le premier chiffre ? \n");
+    scanf("%f", &A);
+
+    printf("Quelle est le second chiffre ? \n");
+    scanf("%f", &B);
+
+    float C = (A * B); //Ici, je préfère calculer dans un endroit prévu pour ça plutôt que directement dans le printf.
+
+    printf("Le résultat (produit) est égale à %f.\n", C);
+}
+
+
+
+
+
+Le code Python :
+
+A = int(input("Quel est le premier chiffre ?")) 
+B = int(input("Quel est le second chiffre ?"))
+
+print(f"Le résultat est {A*B}.")
+
+#Je ne suis pas doué par commenter. Je ne sais pas quoi dire là.
