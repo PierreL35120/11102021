@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+
+    int A;
+    int B;
+    int C;
+
+    printf("Quelle est le premier chiffre ? \n");
+    scanf("%i", &A);
+
+    printf("Quelle est le second chiffre ? \n");
+    scanf("%i", &B);
+    
+    printf("Quelle est le troisième chiffre ? \n");
+    scanf("%i", &C);
+    
+    if(A > B && A > C){
+        printf("%i est l'entier le plus grand.", A);
+    }
+    
+    else if(B > A && B > C){
+        printf("%i est l'entier le plus grand.", B);
+    }
+    
+    else if(C > A && C > B){
+        printf("%i est l'entier le plus grand.", C);
+    }
+    printf("\n");
+}
+
+
+
+
+La version Python :
+
+A = int(input("Quel est le premier chiffre ? \n"));
+B = int(input("Quel est le second chiffre ? \n"));
+C = int(input("Quel est le troisème chiffre ? \n"));
+
+if A > B and A > C :
+    print(f"{A} (Le premier) est l'entier le plus grand.")
+    
+elif B > A and B > C :
+    print(f"{B} (Le second) est l'entier le plus grand.")
+    
+elif C > A and C > B :
+    print(f"{C} (Le troisième) est l'entier le plus grand.")
