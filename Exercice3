@@ -17,15 +17,18 @@ int main(void)
     printf("Quelle est le troisième chiffre ? \n");
     scanf("%i", &C);
     
-    if(A > B && A > C){
+    if (A > B && A > C)
+    {
         printf("%i est l'entier le plus grand.", A);
     }
     
-    else if(B > A && B > C){
+    else if (B > A && B > C)
+    {
         printf("%i est l'entier le plus grand.", B);
     }
     
-    else if(C > A && C > B){
+    else if (C > A && C > B)
+    {
         printf("%i est l'entier le plus grand.", C);
     }
     printf("\n");
